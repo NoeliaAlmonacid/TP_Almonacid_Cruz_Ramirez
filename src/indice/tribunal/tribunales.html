@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Tribunales</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+        <link rel="stylesheet" href="../../estilos/base.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <style>
+            div.bam {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border-style: solid;
+                width: 180px;
+                display: block;
+                text-align: center;
+                background-color: peachpuff;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>UNCA GTF</h1>
+        <section class="menu">
+            <div class="opcion"><a href="../index.html">Home</a></div>
+            <div class="opcion">Comisión de Seguimiento</div>
+            <div class="opcion"><a href="./tribunales.html">Tribunales</a></div>
+            <div class="opcion"><a href="../proyectos/proyectos.html">Proyectos</a></div>
+            <div class="opcion"><a href="../estadisticas/estadisticas.html">Estadisticas</a></div>
+        </section>
+        <br><br>
+        <h2>Gestion de Tribunales</h2>
+        <div class="container p-6 border border-dark">
+            <div class="row">
+                <div class="col-sm-2" style="background-color: darkturquoise; padding-top: 2%; padding-bottom: 2%;">
+                    <div class="bam"><a href="./nuevo_integrante.html">Nuevo Integrante Tribunal</a></div>
+                    <div class="bam">Modificar tribunal</div>
+                    <div class="bam">Eliminar tribunal</div>
+                </div>
+                <div class="col-sm-10" style="background-color: lightcyan;">
+                    <h4>Lista de Tribunales</h4>
+                    <label for="opcionDespliegue">Listar por:</label>
+                    <select id="opcionDespliegue">
+                        <option value="E">Estado</option>
+                        <option value="F">Fechas</option>
+                    </select>
+
+
+                    <div class="table-responsive mt-3">
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Nombre del tribunal</th>
+                                    <th>Docente director</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>2023-11-20</th>
+                                    <th>Tribunal ejemplo 1</th>
+                                    <th>Perez Juan</th>
+                                    <th>Aprobado</th>
+                                </tr>
+                                <tr>
+                                    <th>2024-11-18</th>
+                                    <th>Tribunal ejemplo 2</th>
+                                    <th>Vargas Ana</th>
+                                    <th>Pendiente</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Creado por alumnos de la <span class="resaltarBlanco">Universidad Nacional de Catamarca</span></p>
+            <p>Contacto:</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>
