@@ -10,10 +10,6 @@ footer{
     color:aliceblue;
 } 
 
-/* section.menu{
-    margin-bottom: 20px;
-} */
-
 div.opcion{
     background-color: lightsalmon;
     display: inline;
@@ -22,4 +18,19 @@ div.opcion{
     padding-right: 8px;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+
+nav#barraNav{
+    background-color: #0693e3;
+}
+
+nav a.navbar-brand{
+    color: yellow;
+}
+
+a.bam{
+    background-color: #0693e3; 
+    color: white;
+    border-style: solid;
+    border-color: black;
 }
