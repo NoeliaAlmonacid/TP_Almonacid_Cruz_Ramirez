@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
+
 /*Body*/
 
 body {
     margin: 0 auto;
     background-color: rgba(233, 233, 233, 0.829);
-    
+
     color: rgb(8, 8, 8);
     display: grid;
     min-height: 100vh;
-    grid-template-rows:auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
 }
 
 /*h1*/
@@ -20,11 +21,24 @@ body {
     text-align: center;
 }
 
-.resaltarBlanco{
-    color:aliceblue;
-} 
+/*fondo de la lista de proyectos*/
+.fondoC {
+    background-color: darkturquoise;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
-div.opcion{
+/*fondo de la lista de proyectos*/
+
+.fondoLista {
+    background-color: lightcyan;
+}
+
+.resaltarBlanco {
+    color: aliceblue;
+}
+
+div.opcion {
     background-color: lightsalmon;
     display: inline;
     border-style: solid;
@@ -34,30 +48,30 @@ div.opcion{
     padding-bottom: 3px;
 }
 
-nav#barraNav{
+nav#barraNav {
     background-color: #0693e3;
 }
 
-div.btn-group-vertical{
-    background-color: darkturquoise; 
-    padding-top: 2%; 
+div.btn-group-vertical {
+    background-color: darkturquoise;
+    padding-top: 2%;
     padding-bottom: 2%;
 }
 
-div.columna-tabla{
+div.columna-tabla {
     background-color: lightcyan;
 }
 
-li.nav-item a.boton-nav{
+li.nav-item a.boton-nav {
     color: white;
 }
 
-nav a.navbar-brand{
+nav a.navbar-brand {
     color: yellow;
 }
 
-a.bam{
-    background-color: #0693e3; 
+a.bam {
+    background-color: #0693e3;
     color: white;
     border-style: solid;
     border-color: black;
@@ -65,10 +79,10 @@ a.bam{
 
 /* Footer*/
 
-footer{
+footer {
     background-color: cadetblue;
     text-align: center;
-    border-style:double;
+    border-style: double;
     border-radius: 8px;
     margin-top: 20px;
 }
