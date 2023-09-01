@@ -6,15 +6,6 @@
 
 /*Body*/
 
-body {
-    margin: 0 auto;
-    background-color: rgba(233, 233, 233, 0.829);
-
-    color: rgb(8, 8, 8);
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
 
 /*h1*/
 .textoPrincipal {

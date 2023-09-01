@@ -8,19 +8,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Comisión de Seguimiento de Trabajo Final-Listado de Proyectos</title>
     <link rel="stylesheet" href="../../estilos/base.css">
-    <style>
-        div.bam {
-            margin-top: 10px;
-            margin-bottom: 10px; 
-            border-style: solid;
-            width: 180px;
-            display: block;
-            text-align: center;
-            background-color: peachpuff;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-    </style>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark" id="barraNav">
@@ -54,14 +42,14 @@
 
     <h1 class=" textoPrincipal pt-3"> Listado de Proyectos Finales</h1>
     
-    <div class="container p-6 border border-dark">
+    <div class="container-fuid p-6 border border-dark">
         <div class="row">
-            <div class="col-sm-2" class="fondoC">
-                <div class="bam"><a href="./nuevo_proyecto.html">Nuevo proyecto</a></div>
-                <div class="bam">Modificar proyecto</div>
-                <div class="bam">Eliminar proyecto</div>
+            <div class="col-sm-2 btn-group-vertical">
+                <a href="#" class="btn bam">Nuevo proyecto</a>
+                <a href="#" class="btn bam">Modificar Proyecto</a>
+                <a href="#" class="btn bam">Eliminar proyecto</a>
             </div>
-            <div class="col-sm-10" class="fondoLista">
+            <div class="col-sm-10 columna-tabla">
                 <h4>Lista de Proyectos</h4>
                 <label for="opcionDespliegue">Listar por:</label>
                 <select id="opcionDespliegue">
