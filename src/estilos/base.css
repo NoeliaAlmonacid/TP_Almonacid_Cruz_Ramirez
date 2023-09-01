@@ -24,6 +24,20 @@ nav#barraNav{
     background-color: #0693e3;
 }
 
+div.btn-group-vertical{
+    background-color: darkturquoise; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+}
+
+div.columna-tabla{
+    background-color: lightcyan;
+}
+
+li.nav-item a.boton-nav{
+    color: white;
+}
+
 nav a.navbar-brand{
     color: yellow;
 }
