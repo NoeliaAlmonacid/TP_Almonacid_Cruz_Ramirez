@@ -1,9 +1,23 @@
-footer{
-    background-color: cadetblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/*Body*/
+
+body {
+    margin: 0 auto;
+    background-color: rgba(233, 233, 233, 0.829);
+    
+    color: rgb(8, 8, 8);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows:auto 1fr auto;
+}
+
+/*h1*/
+.textoPrincipal {
     text-align: center;
-    border-style:double;
-    border-radius: 8px;
-    margin-top: 20px;
 }
 
 .resaltarBlanco{
@@ -47,4 +61,14 @@ a.bam{
     color: white;
     border-style: solid;
     border-color: black;
+}
+
+/* Footer*/
+
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    border-style:double;
+    border-radius: 8px;
+    margin-top: 20px;
 }
