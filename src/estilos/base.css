@@ -77,3 +77,36 @@ footer {
     border-radius: 8px;
     margin-top: 20px;
 }
+
+/*Formularios*/
+.titulo-formulario{
+  text-align: center;
+  padding: 20px;
+}
+#formularioTribunal, #formularioProyecto{
+  width: 50%;
+  border-radius: 5px;
+  background-color: lightcyan;
+  padding: 20px;
+}
+#opcionDespliegue, #formularioTribunal input[type=text], #formularioTribunal select,
+ #formularioProyecto input[type=text]{
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#formularioTribunal .botones-form, #formularioProyecto .botones-form{
+  text-align: right;
+}
+@media only screen and (max-width: 600px) {
+  #formularioTribunal, #formularioProyecto {
+    width: 100%;
+    border-radius: 0%;
+  }
+  #formularioTribunal .botones-form, #formularioProyecto .botones-form{
+  text-align: center;
+}
+}
