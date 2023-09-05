@@ -42,16 +42,14 @@
         </div>
         <div class="container border border-dark p-3" id="formularioTribunal">
             <form action="#" method="post">
-
-                <div class="container border border-dark p-3">
                     <h4>Datos de un integrante al tribunal:</h4>
                     <div class="row">
                         <label for="apellidoDocente">Apellido/s:</label>
-                        <input type="text" id="apellidoDocente">
+                        <input type="text" name="apellidoDocente" id="apellidoDocente">
                         <label for="nombreDoncente">Nombre/s:</label>
-                        <input type="text" id="nombreDoncente">
+                        <input type="text" name="nombreDoncente" id="nombreDoncente">
                         <label for="cuilDocente">CUIL:</label>
-                        <input type="text" id="cuilDocente">
+                        <input type="text" name="cuilDocente" id="cuilDocente">
                         <label for="tribunal">Tribunal:</label>
                         <select name="tribunal" id="tribunal">
                             <option value="#">Seleccione un Tribunal</option>
@@ -71,8 +69,6 @@
                         <button type="submit" class="btn btn-primary">Agregar</button>
                         <a class="btn btn-danger" href="./tribunales.html">Cancelar</a>
                     </div>
-
-                </div>
             </form>
         </div>
         <footer>

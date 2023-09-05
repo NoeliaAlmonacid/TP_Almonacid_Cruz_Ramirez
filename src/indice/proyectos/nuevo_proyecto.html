@@ -15,26 +15,19 @@
         <div class="container border border-dark p-3" id="formularioProyecto">
             <form action="#" method="post">
                 <div class="container border border-dark p-3">
-                    <p>Fecha de hoy:</p>
                     <div class="row">
+                        <label for="fecha_act">Fecha de hoy</label>
+                        <input type="date" name="fecha_act" id="fecha_act">
                         <label for="tituloProyecto">Título</label>
-                        <input type="text" id="tituloProyecto" required>
-                    </div>
-                    <div class="row">
+                        <input name="tituloProyecto" type="text" id="tituloProyecto" required>
                         <label for="descripcionProyecto">Descripción</label>
-                        <input type="text" id="descripcionProyecto">
-                    </div>
-                    <div class="row">
+                        <input name="descripcionProyecto" type="text" id="descripcionProyecto">
                         <label for="archivoProyecto">Archivo del Proyecto</label>
-                        <input type="file" id="archivoProyecto" required>
-                    </div>
-                    <div class="row">
+                        <input name="archivoProyecto" type="file" id="archivoProyecto" required>
                         <label for="certificadoAnalitico">Certificado analítico</label>
-                        <input type="file" id="certificadoAnalitico">
-                    </div>
-                    <div class="row">
+                        <input name="certificadoAnalitico" type="file" id="certificadoAnalitico">                    
                         <label for="notaDirector">Nota al Director</label>
-                        <input type="file" id="notaDirector">
+                        <input name="notaDirector" type="file" id="notaDirector">
                     </div>
                     <div class="row">
                         <label for="cvDirector">CV del Director</label>
@@ -43,7 +36,6 @@
                 </div>
                 
                 <div class="container border border-dark p-3">
-                    <a class="btn btn-success">Agregar Alumno</a>
                     <h4>Datos del alumno:</h4>
                     <div class="row">
                         <label for="apellidoAlumno">Apellido/s:</label>

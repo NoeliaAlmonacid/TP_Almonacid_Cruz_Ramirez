@@ -81,14 +81,14 @@ footer {
   text-align: center;
   padding: 20px;
 }
-#formularioTribunal, #formularioProyecto{
+#formularioTribunal, #formularioProyecto, #formularioComision {
   width: 50%;
   border-radius: 5px;
   background-color: lightcyan;
   padding: 20px;
 }
 #opcionDespliegue, #formularioTribunal input[type=text], #formularioTribunal select,
- #formularioProyecto input[type=text]{
+ #formularioProyecto input[type=text], #formularioComision input[type=text] {
   padding: 8px 16px;
   margin: 8px 0;
   display: inline-block;
@@ -96,11 +96,11 @@ footer {
   border-radius: 4px;
   box-sizing: border-box;
 }
-#formularioTribunal .botones-form, #formularioProyecto .botones-form{
+#formularioTribunal .botones-form, #formularioProyecto .botones-form, #formularioComision .botones-form{
   text-align: right;
 }
 @media only screen and (max-width: 600px) {
-  #formularioTribunal, #formularioProyecto {
+  #formularioTribunal, #formularioProyecto,#formularioComision  {
     width: 100%;
     border-radius: 0%;
   }
