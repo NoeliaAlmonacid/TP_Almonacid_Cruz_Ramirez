@@ -6,6 +6,12 @@
 
 /*Body*/
 
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /*h1*/
 .textoPrincipal {
@@ -70,41 +76,65 @@ a.bam {
 
 /* Footer*/
 
-footer {
-    background-color: rgb(86, 135, 209);
-    text-align: center;
+.footer {
     margin-top: 20px;
 }
 
-/*Formularios*/
-.titulo-formulario{
-  text-align: center;
-  padding: 20px;
-}
-#formularioTribunal, #formularioProyecto, #formularioComision {
-  width: 50%;
-  border-radius: 5px;
-  background-color: lightcyan;
-  padding: 20px;
-}
-#opcionDespliegue, #formularioTribunal input[type=text], #formularioTribunal select,
- #formularioProyecto input[type=text], #formularioComision input[type=text] {
-  padding: 8px 16px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-#formularioTribunal .botones-form, #formularioProyecto .botones-form, #formularioComision .botones-form{
-  text-align: right;
-}
-@media only screen and (max-width: 600px) {
-  #formularioTribunal, #formularioProyecto,#formularioComision  {
-    width: 100%;
-    border-radius: 0%;
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
   }
-  #formularioTribunal .botones-form, #formularioProyecto .botones-form{
-  text-align: center;
+
+  .negrita{
+    font-weight: bold;
+  }
+
+/*Formularios*/
+.titulo-formulario {
+    text-align: center;
+    padding: 20px;
 }
+
+#formularioTribunal,
+#formularioProyecto,
+#formularioComision {
+    width: 50%;
+    border-radius: 5px;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+#opcionDespliegue,
+#formularioTribunal input[type=text],
+#formularioTribunal select,
+#formularioProyecto input[type=text],
+#formularioComision input[type=text] {
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formularioTribunal .botones-form,
+#formularioProyecto .botones-form,
+#formularioComision .botones-form {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #formularioTribunal,
+    #formularioProyecto,
+    #formularioComision {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    #formularioTribunal .botones-form,
+    #formularioProyecto .botones-form {
+        text-align: center;
+    }
 }
