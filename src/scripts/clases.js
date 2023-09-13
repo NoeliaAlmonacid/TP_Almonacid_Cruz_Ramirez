@@ -6,23 +6,24 @@ class Persona{
     }
     obtenerDetalles(){
         console.log(`Nombre: ${this.nombre}`);
-        console.log(`Nombre: ${this.apellido}`);
-        console.log(`Nombre: ${this.genero}`);
+        console.log(`Apellido: ${this.apellido}`);
+        console.log(`Género: ${this.genero}`);
     }
 }
 
 class Estudiante extends Persona{
-    constructor(nombre, apellido, genero, curso, grupo=[]){
+    curso;
+    grupo = [];
+    constructor(nombre, apellido, genero, curso){
         super(nombre, apellido, genero);
         this.curso = curso;
-        this.grupo = grupo;
         this.anadirASuGrupo();
     }
     anadirASuGrupo(){
         this.grupo.push(this.apellido + " " + this.nombre);
     }
 
-    anexarAgrupo(estudiante){
+    anexarAGrupo(estudiante){
         this.grupo.push(estudiante["apellido"] + " " + estudiante["nombre"]);
     }
 
@@ -33,13 +34,15 @@ class Estudiante extends Persona{
 }
 
 class Profesor extends Persona{
-    constructor(nombre, apellido, genero, asignatura, comision){
+    asignatura;
+    comision;
+    constructor(nombre, apellido, genero, asignatura){
         super(nombre, apellido, genero);
         this.asignatura = asignatura;
-        this.comision = comision;
     }
-    asignar(){
-        console.log(`Asignado a la comisión de ${this.comision}`);
+    asignar(comision){
+        this.comision = comision;
+        console.log(`Asignado a la comisión ${this.comision}`);
     }
 }
 
@@ -48,13 +51,20 @@ let estudiante1 = new Estudiante("Juan", "Perez", "V", "Geología");
 let estudiante2 = new Estudiante("Liliana", "Barros Gershani", "M", "Geología");
 let estudiante3 = new Estudiante("Julian", "Miranda", "F", "Geología");
 //estudiante1.anexarAgrupo(estudiante1);
-estudiante1.anexarAgrupo(estudiante2);
-estudiante1.anexarAgrupo(estudiante3);
-estudiante2.anexarAgrupo(estudiante1);
+estudiante1.anexarAGrupo(estudiante2);
+estudiante1.anexarAGrupo(estudiante3);
+estudiante2.anexarAGrupo(estudiante1);
 //estudiante2.anexarAgrupo(estudiante2);
-estudiante2.anexarAgrupo(estudiante3);
-estudiante3.anexarAgrupo(estudiante1);
-estudiante3.anexarAgrupo(estudiante2);
+estudiante2.anexarAGrupo(estudiante3);
+estudiante3.anexarAGrupo(estudiante1);
+estudiante3.anexarAGrupo(estudiante2);
 //estudiante3.anexarAgrupo(estudiante3);
 estudiante1.obtenerDetalles();
 estudiante1.registrar();
+
+let profesor1 = new Profesor("Nahomi", "Lucero", "M", "Geología");
+let profesor2 = new Profesor("Roberto", "Ramos", "V", "Redes de Comunicación");
+let profesor3 = new Profesor("Veronica", "Juarez", "M", "Gestión de Repositorios");
+
+profesor1.asignar(1);
+profesor2.asignar(2);
