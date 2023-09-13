@@ -14,8 +14,9 @@ body {
 }
 
 /*h1*/
-.textoPrincipal {
+div.franja .textoPrincipal {
     text-align: center;
+    color: white;
 }
 
 /*fondo de la lista de proyectos*/
@@ -59,6 +60,17 @@ div.columna-tabla {
     background-color: lightcyan;
 }
 
+div.contenedorCuerpo{
+    background-color: lightgray;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.franja{
+    background-color: #009b94;
+    padding-bottom: 2px;
+}
+
 li.nav-item a.boton-nav {
     color: white;
 }
@@ -75,6 +87,41 @@ a.bam {
 }
 
 /* Footer*/
+
+
+/* footer {
+    background-color: rgb(86, 135, 209);
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+} */
+
+
+/*#formularioProyecto*/
+#formularioTribunal, #formularioComision {
+  width: 50%;
+  border-radius: 5px;
+  background-color: lightcyan;
+  padding: 20px;
+}
+
+/*, #formularioProyecto input[type=text] */
+#opcionDespliegue, #formularioTribunal input[type=text], #formularioTribunal select, #formularioComision input[type=text] {
+  padding: 8px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/*#formularioProyecto .botones-form*/
+#formularioTribunal .botones-form, #formularioComision .botones-form{
+  text-align: right;
+}
 
 .footer,
 .separacion {
