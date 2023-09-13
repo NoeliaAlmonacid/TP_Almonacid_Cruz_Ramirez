@@ -57,6 +57,15 @@
                                     <label for="ffin" class="form-label">Seleccione Fecha Fin</label>
                                     <input type="date" name="ffin" id="ffin" class="form-control" onchange=" comprobacionFecha()"><br><br>
                                 </div>
+                                <div class="filtro-estadistica">
+                                    <label for="opcionDespliegue">Listar por:</label>
+                                      <select id="opcionDespliegue">
+                                        <option value="E">Estado 1</option>
+                                        <option value="F">Estado 2</option>
+                                      </select>
+                                    <button type="submit" class="btn btn-outline-dark boton">Filtrar</button>
+
+                                </div>
                             </form><br>
                             
                             <table class="table table-hover">

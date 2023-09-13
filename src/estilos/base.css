@@ -222,3 +222,7 @@ a.bam {
 div.body-home div.botones-form{
     text-align: right;
 }
+.filtro-estadistica{
+    max-width: 700px;
+    margin-top: 0px
+}
