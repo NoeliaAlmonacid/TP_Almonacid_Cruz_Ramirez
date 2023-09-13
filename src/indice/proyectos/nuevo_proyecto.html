@@ -34,6 +34,33 @@
 
     </head>
     <body>
+        <nav class="navbar navbar-expand-sm navbar-dark" id="barraNav">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">GTF</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="miNavbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link boton-nav" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link boton-nav" href="../comision/registro_cstf.html">Comisión de Seguimiento</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link boton-nav" href="./proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link boton-nav" href="../tribunal/tribunales.html">Tribunales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link boton-nav" href="../estadisticas/estadisticas.html">Estadisticas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <div class="body-pages">
             <div class="container .titulo-formulario">
             <h1 class="textoPrincipal pt-3">Alta del Proyecto</h1>
@@ -99,43 +126,28 @@
 
                         <div class="container border border-dark p-3 mt-2">
                             <h3>Alumnos participantes del proyecto</h3>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th style="background-color: coral">DNI</th>
-                                        <th>APELLIDO</th>
-                                        <th style="background-color: coral;">NOMBRE</th>
-                                        <th>MATRÍCULA</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tablaAlumnos">
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="container border border-dark p-3 mt-2">
-                        <h3>Alumnos participantes del proyecto</h3>
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th style="background-color: coral">DNI</th>
-                                        <th>APELLIDO</th>
-                                        <th style="background-color: coral;">NOMBRE</th>
-                                        <th>MATRÍCULA</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tablaAlumnos">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color: coral">DNI</th>
+                                            <th>APELLIDO</th>
+                                            <th style="background-color: coral;">NOMBRE</th>
+                                            <th>MATRÍCULA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tablaAlumnos">
     
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
 
-                <div class="botones-form">
+                <div class="botones-form mt-1">
                     <button type="submit" class="btn btn-primary" form="formulario">Guardar</button>
                     <a class="btn btn-danger" href="./proyectos.html">Cancelar</a>
                 </div>
