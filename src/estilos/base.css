@@ -5,9 +5,11 @@
 }
 
 /*Body*/
-body{
-    position: relative; 
-    padding-bottom: 10em;
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -86,7 +88,8 @@ a.bam {
 
 /* Footer*/
 
-footer {
+
+/* footer {
     background-color: rgb(86, 135, 209);
     text-align: center;
     margin-top: 20px;
@@ -94,13 +97,8 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 1em;
-}
+} */
 
-/*Formularios*/
-.titulo-formulario{
-  text-align: center;
-  padding: 20px;
-}
 
 /*#formularioProyecto*/
 #formularioTribunal, #formularioComision {
@@ -124,12 +122,79 @@ footer {
 #formularioTribunal .botones-form, #formularioComision .botones-form{
   text-align: right;
 }
-@media only screen and (max-width: 600px) {
-  #formularioTribunal, #formularioProyecto,#formularioComision  {
-    width: 100%;
-    border-radius: 0%;
-  }
-  #formularioTribunal .botones-form, #formularioProyecto .botones-form{
-  text-align: center;
+
+.footer,
+.separacion {
+    margin-top: 30px;
 }
+
+.list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+/*Formularios*/
+
+.titulo-formulario {
+    text-align: center;
+    padding: 20px;
+}
+
+#formularioTribunal,
+#formularioProyecto,
+#formularioComision {
+    width: 50%;
+    border-radius: 5px;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+#opcionDespliegue,
+#formularioTribunal input[type=text],
+#formularioTribunal select,
+#formularioProyecto input[type=text],
+#formularioComision input[type=text] {
+    padding: 8px 16px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#formularioTribunal .botones-form,
+#formularioProyecto .botones-form,
+#formularioComision .botones-form {
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #formularioTribunal,
+    #formularioProyecto,
+    #formularioComision {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    #formularioTribunal .botones-form,
+    #formularioProyecto .botones-form {
+        text-align: center;
+    }
+}
+
+/*ESTADISTICAS*/
+
+.card-header1 {
+    padding: .5rem 1rem;
+    margin-bottom: 0;
+    background-color: rgb(25, 53, 82);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    color: white;
+    font-size: 150%;
 }

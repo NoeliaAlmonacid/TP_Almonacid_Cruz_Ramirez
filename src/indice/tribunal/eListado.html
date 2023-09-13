@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -11,10 +10,8 @@
     <link rel="stylesheet" href="../../estilos/base.css">
     <!-- Icono de la página -->
     <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
-    <title>Nuevo Integrante de Tribunal</title>
-
+    <title>Informe de Estadísticas-Listado de Tribunales Evaluadores</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark" id="barraNav">
         <div class="container-fluid">
@@ -28,7 +25,7 @@
                         <a class="nav-link boton-nav" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link boton-nav" href="../comision/registro_cstf.html">Comision de
+                        <a class="nav-link boton-nav" href="../comision/registro_cstf.html">Comisión de
                             Seguimiento</a>
                     </li>
                     <li class="nav-item">
@@ -45,42 +42,55 @@
             </div>
         </div>
     </nav>
-    <div class="container titulo-formulario">
-        <h1>Alta del Integrante</h1>
-    </div>
-    <div class="container border border-dark p-3" id="formularioTribunal">
-        <form action="#" method="post">
-            <h4>Datos de un integrante al tribunal:</h4>
-            <div class="row">
-                <label for="apellidoDocente">Apellido/s:</label>
-                <input type="text" name="apellidoDocente" id="apellidoDocente">
-                <label for="nombreDoncente">Nombre/s:</label>
-                <input type="text" name="nombreDoncente" id="nombreDoncente">
-                <label for="cuilDocente">CUIL:</label>
-                <input type="text" name="cuilDocente" id="cuilDocente">
-                <label for="tribunal">Tribunal:</label>
-                <select name="tribunal" id="tribunal">
-                    <option value="#">Seleccione un Tribunal</option>
-                    <option value="t1">Tribunal ejemplo 1</option>
-                    <option value="t2">Tribunal ejemplo 2</option>
-                </select>
-                <label for="rol">Rol:</label>
-                <select name="rol" id="rol">
-                    <option value="#">Seleccione un Rol</option>
-                    <option value="presidente">Presidente</option>
-                    <option value="vocalTitular">Vocal Titular</option>
-                    <option value="vocalSuplente">Vocal Suplente</option>
-                </select>
+    <section class="separacion" >
+        <div class= "container body1">
+            <div class="card">
+                  <div class="card-header1">
+                      Listado de Tribunales Evaluadores
+                  </div>
+                  <div class="card-body">
+                            <form action="#" method="post" class="row g-3">
+                                <div class="col-md-6">    
+                                    <label for="fincial" class="form-label">Seleccione Fecha Inicial</label>
+                                    <input type="date" name="fincial" id="fincial" class="form-control" onchange=" comprobacionFecha()"><br><br>
+                                </div>
+                                <div class="col-md-6">   
+                                    <label for="ffin" class="form-label">Seleccione Fecha Fin</label>
+                                    <input type="date" name="ffin" id="ffin" class="form-control" onchange=" comprobacionFecha()"><br><br>
+                                </div>
+                            </form><br>
+                            
+                            <table class="table table-hover">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Registro</th>
+                                    <th scope="col">Presidente</th>
+                                    <th scope="col">Nombre del proyecto</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Perez Juan</td>
+                                    <td>Proyecto ejemplo 1</td>
+                                    <td>Aprobado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Gimenez Luis</td>
+                                    <td>Proyecto ejemplo 2</td>
+                                    <td>Pendiente</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                  </div>
             </div>
-            <br>
-            <div class="botones-form">
-                <button type="submit" class="btn btn-primary">Agregar</button>
-                <a class="btn btn-danger" href="./tribunales.html">Cancelar</a>
-            </div>
-        </form>
-    </div>
+        </div>
+    </section>
+    
     <!-- FOOTER -->
-    <footer class="bg-primary text-white text-center text-lg-start footer">
+    <footer class="bg-primary text-white text-center text-lg-start footer pt-6">
         <!-- Grid container -->
         <div class="container pt-3">
             <!--Grid row-->
@@ -154,9 +164,9 @@
         </div>
         <!-- Copyright -->
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
