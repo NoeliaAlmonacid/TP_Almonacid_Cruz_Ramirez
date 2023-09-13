@@ -123,9 +123,8 @@ a.bam {
   text-align: right;
 }
 
-.footer,
-.separacion {
-    margin-top: 30px;
+.body-pages {
+    margin-bottom: 70px;
 }
 
 .list-unstyled li {
@@ -197,4 +196,29 @@ a.bam {
     border-bottom: 1px solid rgba(0, 0, 0, .125);
     color: white;
     font-size: 150%;
+}
+/*Home*/
+.body-home{
+    background-image: url('../img/landing.jpg');
+    background-repeat: round;
+    background-size: cover;
+    height: 100vh;
+}
+#formularioLogin{
+  border-radius: 2px 2px 5px 5px;
+  padding: 10px 20px 20px 20px;
+  width: 90%;
+  max-width: 320px;
+  background: #ffffff;
+  position: relative;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.3);
+}
+#formularioLogin {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+}
+div.body-home div.botones-form{
+    text-align: right;
 }

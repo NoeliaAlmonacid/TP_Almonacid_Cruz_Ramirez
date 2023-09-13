@@ -53,54 +53,53 @@
             <a class="nav-link boton-nav" href="../estadisticas/estadisticas.html">Estadisticas</a>
           </li>
         </ul>
-        <button class="btn btn-primary" type="button">Iniciar Sesión</button>
       </div>
     </div>
   </nav>
+  <div class="body-pages">
+    <h1 class="textoPrincipal pt-3">Gestion de Tribunales</h1>
+    <div class="container p-6 border border-dark">
+      <div class="row">
+        <div class="col-sm-2 btn-group-vertical">
+          <a href="./nuevo_integrante.html" class="btn bam">Nuevo Integrante Tribunal</a>
+          <a href="#" class="btn bam">Modificar tribunal</a>
+          <a href="#" class="btn bam">Eliminar tribunal</a>
+        </div>
+        <div class="col-sm-10 columna-tabla">
+          <h4>Lista de Tribunales</h4>
+          <label for="opcionDespliegue">Listar por:</label>
+          <select id="opcionDespliegue">
+            <option value="E">Estado</option>
+            <option value="F">Fechas</option>
+          </select>
 
-  <h1 class="textoPrincipal pt-3">UNCA GTF</h1>
-  <h2>Gestion de Tribunales</h2>
-  <div class="container p-6 border border-dark">
-    <div class="row">
-      <div class="col-sm-2 btn-group-vertical">
-        <a href="./nuevo_integrante.html" class="btn bam">Nuevo Integrante Tribunal</a>
-        <a href="#" class="btn bam">Modificar tribunal</a>
-        <a href="#" class="btn bam">Eliminar tribunal</a>
-      </div>
-      <div class="col-sm-10 columna-tabla">
-        <h4>Lista de Tribunales</h4>
-        <label for="opcionDespliegue">Listar por:</label>
-        <select id="opcionDespliegue">
-          <option value="E">Estado</option>
-          <option value="F">Fechas</option>
-        </select>
 
-
-        <div class="table-responsive mt-3">
-          <table class="table table-hover table-sm">
-            <thead>
-              <tr>
-                <th>Fecha</th>
-                <th>Nombre del tribunal</th>
-                <th>Docente director</th>
-                <th>Estado</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>2023-11-20</th>
-                <th>Tribunal ejemplo 1</th>
-                <th>Perez Juan</th>
-                <th>Aprobado</th>
-              </tr>
-              <tr>
-                <th>2024-11-18</th>
-                <th>Tribunal ejemplo 2</th>
-                <th>Vargas Ana</th>
-                <th>Pendiente</th>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-responsive mt-3">
+            <table class="table table-hover table-sm">
+              <thead>
+                <tr>
+                  <th>Fecha</th>
+                  <th>Nombre del tribunal</th>
+                  <th>Docente director</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>2023-11-20</th>
+                  <th>Tribunal ejemplo 1</th>
+                  <th>Perez Juan</th>
+                  <th>Aprobado</th>
+                </tr>
+                <tr>
+                  <th>2024-11-18</th>
+                  <th>Tribunal ejemplo 2</th>
+                  <th>Vargas Ana</th>
+                  <th>Pendiente</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
