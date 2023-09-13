@@ -76,7 +76,8 @@ a.bam {
 
 /* Footer*/
 
-.footer, .separacion {
+.footer,
+.separacion {
     margin-top: 30px;
 }
 
@@ -84,13 +85,14 @@ a.bam {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-  }
+}
 
-  .negrita{
+.negrita {
     font-weight: bold;
-  }
+}
 
 /*Formularios*/
+
 .titulo-formulario {
     text-align: center;
     padding: 20px;
@@ -141,11 +143,11 @@ a.bam {
 
 /*ESTADISTICAS*/
 
-.card-header1{
+.card-header1 {
     padding: .5rem 1rem;
     margin-bottom: 0;
     background-color: rgb(25, 53, 82);
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
     color: white;
     font-size: 150%;
 }
