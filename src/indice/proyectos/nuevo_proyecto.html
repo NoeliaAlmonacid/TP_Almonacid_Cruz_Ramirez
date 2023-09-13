@@ -1,160 +1,184 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Nuevo Proyecto Prueba</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- CSS PROPIO -->
-        <link rel="stylesheet" href="../../estilos/base.css">
-        <link rel="stylesheet" href="../../estilos/proyecto.css">
-        <!-- CSS BS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <!-- Icono de la página -->
-        <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">  
-  
-        <script>
-            document.addEventListener('DOMContentLoaded', function(){
-                document.querySelector('#formulario').onsubmit = function() { 
-                    let fechaInput = document.getElementById("fecha_alta");
-                    let fechaSeleccionada = fechaInput.value;
-                    let fechaActual = new Date();
-                    //convierte fecha actual a formato ISO y extrae los caracteres de año-mes-día
-                    let fechaISO = fechaActual.toISOString().slice(0,10);
 
-                    if(fechaSeleccionada > fechaISO){
-                        alert(`La fecha seleccionada para el proyecto no puede ser superior a la fecha actual \n\n Fecha actual: ${fechaISO}`);
-                        return false;
-                    }
-                    return true;
+<head>
+    <title>Nuevo Proyecto Prueba</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS PROPIO -->
+    <link rel="stylesheet" href="../../estilos/base.css">
+    <link rel="stylesheet" href="../../estilos/proyecto.css">
+    <!-- CSS BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Icono de la página -->
+    <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('#formulario').onsubmit = function () {
+                let fechaInput = document.getElementById("fecha_alta");
+                let fechaSeleccionada = fechaInput.value;
+                let fechaActual = new Date();
+                //convierte fecha actual a formato ISO y extrae los caracteres de año-mes-día
+                let fechaISO = fechaActual.toISOString().slice(0, 10);
+
+                if (fechaSeleccionada > fechaISO) {
+                    alert(`La fecha seleccionada para el proyecto no puede ser superior a la fecha actual \n\n Fecha actual: ${fechaISO}`);
+                    return false;
                 }
-            });  
-        </script>
+                return true;
+            }
+        });  
+    </script>
 
-        <script src="../../scripts/proyectosJS.js"></script>
+    <script src="../../scripts/proyectosJS.js"></script>
 
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-sm navbar-dark" id="barraNav">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">GTF</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="barraNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">GTF</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="miNavbar">
+            </button>
+            <div class="collapse navbar-collapse" id="miNavbar">
                 <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link boton-nav" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link boton-nav"href="../comision/proyectos_finales.html">Comisión de Seguimiento</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link boton-nav" href="./proyectos.html">Proyectos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link boton-nav" href="../tribunal/tribunales.html">Tribunales</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link boton-nav" href="../estadisticas/estadisticas.html">Estadisticas</a>
-                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton-nav" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton-nav" href="../comision/proyectos_finales.html">Comisión de
+                            Seguimiento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton-nav" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton-nav" href="../tribunal/tribunales.html">Tribunales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link boton-nav" href="../estadisticas/estadisticas.html">Estadisticas</a>
+                    </li>
                 </ul>
-              </div>
             </div>
-          </nav>
-        <div class="body-pages">
-            <div class="container .titulo-formulario">
-            <h1 class="textoPrincipal pt-3">Alta del Proyecto</h1>
-            </div>
-            <div class="container-fluid border border-dark p-3" id="formularioPF">
-                <div class="row">
-                    <div class="col-6" id="columnaForm">
-                        <form action="#" method="post" id="formulario" enctype="multipart/form-data">
-
-                            <div class="container border border-dark p-3">
-                                <h3>Datos del Proyecto</h3>
-
-                                <label for="fecha_alta" class="mt-2 mb-2 form-control-label">Fecha</label>
-                                <input type="date" class="form-control" name="fecha_alta" id="fecha_alta" required>
-
-                                <label for="tituloProyecto" class="mt-1 mb-2">Título</label>
-                                <input name="tituloProyecto" class="form-control" type="text" id="tituloProyecto" placeholder="Ingrese título" required>
-
-                                <label for="descripcionProyecto" class="mt-1 mb-1">Descripción:</label>
-                                <textarea name="descripcionProyecto" class="form-control" rows="3" type="text" id="descripcionProyecto" value="">
-                                </textarea>
-
-                                <br>
-
-                                <label for="archivoProyecto" class="mt-1 mb-2">Archivo del Proyecto</label>
-                                <input name="archivoProyecto" type="file" id="archivoProyecto" class="form-control" required>
-
-                                <label for="certificadoAnalitico" class="mt-1 mb-2">Certificado analítico</label>
-                                <input name="certificadoAnalitico" type="file" id="certificadoAnalitico" class="form-control">
-
-                                <label for="notaDirector" class="mt-1 mb-2">Nota al Director</label>
-                                <input type="file" id="notaDirector" class="form-control">
-
-                                <label for="cvDirector" class="mt-1 mb-2">CV del Director</label>
-                                <input type="file" id="cvDirector" class="form-control">
-                            </div>
-
-                           <!--- <br>
-                            <div class="botones-form">
-                                <button type="submit" class="btn btn-primary">Guardar</button>
-                                <a class="btn btn-danger" href="./proyectos.html">Cancelar</a>
-                            </div> -->
-                        </form>
+        </div>
+    </nav>
+    <h1 class="textoPrincipal pt-3 text-center">Alta del Proyecto</h1>
+    <div class="container-fluid border border-dark pt-3 mt-6" id="formularioPF">
+        <div class="row">
+            <div class="col-6" id="columnaForm">
+                <div class="container body1 pt-3">
+                    <div class="card">
+                        <div class="card-header1">
+                            Datos Proyecto
+                        </div>
+                        <div class="card-body">
+                            <form form action="#" method="post" id="formulario" enctype="multipart/form-data">
+                                <div class="col-md-12">
+                                    <label for="fecha_alta"
+                                        class="mt-2 mb-2 form-control-label form-label">Fecha</label>
+                                    <input type="date" class="form-control" name="fecha_alta" id="fecha_alta" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="tituloProyecto" class="mt-1 mb-2 form-label">Título</label>
+                                    <input name="tituloProyecto" class="form-control" type="text" id="tituloProyecto"
+                                        placeholder="Ingrese título" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="descripcionProyecto" class="mt-1 mb-1 form-label">Descripción:</label>
+                                    <textarea name="descripcionProyecto" class="form-control" type="text"
+                                        id="descripcionProyecto" value="">
+                                    </textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="archivoProyecto" class="mt-1 mb-2 form-label">Archivo del
+                                        Proyecto</label>
+                                    <input name="archivoProyecto" type="file" id="archivoProyecto" class="form-control"
+                                        required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="certificadoAnalitico" class="mt-1 mb-2 form-label">Certificado
+                                        analítico</label>
+                                    <input name="certificadoAnalitico" type="file" id="certificadoAnalitico"
+                                        class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="notaDirector" class="mt-1 mb-2 form-label">Nota al Director</label>
+                                    <input type="file" id="notaDirector" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="cvDirector" class="mt-1 mb-2 form-label">CV del Director</label>
+                                    <input type="file" id="cvDirector" class="form-control">
+                                </div>
+                                <div class="col-12">
+                                    
+                                </div>
+                            </form>
+                        </div>
                     </div>
-
-
-                    <div class="col-6" id="columnaFormEstudiante">
-
-                        <div class="container border border-dark p-3">
+                </div>
+            </div>
+            <div class="col-6" id="columnaFormEstudiante">
+                <div class="container body1 pt-3">
+                    <div class="card">
+                        <div class="card-header1">
+                            Datos Proyecto
+                        </div>
+                        <div class="card-body">
                             <h3>Datos del alumno:</h3>
                             <div class="row p-3">
+                                <div class="col-md-6"></div>
                                 <label for="apellidoAlumno">Apellido/s:</label>
                                 <input type="text" id="apellidoAlumno" class="form-control">
+                            </div>
+                            <div>
                                 <label for="nombreAlumno">Nombre/s:</label>
                                 <input type="text" id="nombreAlumno" class="form-control">
+                            </div>
+                            <div>
                                 <label for="dniAlumno">DNI:</label>
                                 <input type="number" id="dniAlumno" class="form-control">
+                            </div>
+                            <div>
                                 <label for="matriculaAlumno">Matricula:</label>
                                 <input type="text" id="matriculaAlumno" class="form-control">
-                                <button onclick="agregarEstudiante()" class="btn btn-success mt-3" style="width: 25%; margin: auto;">Agregar</button>
                             </div>
-                        </div>
-
-                        <div class="container border border-dark p-3 mt-2">
-                            <h3>Alumnos participantes del proyecto</h3>
-                            <div class="table-responsive">
-                                <table class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th style="background-color: coral">DNI</th>
-                                            <th>APELLIDO</th>
-                                            <th style="background-color: coral;">NOMBRE</th>
-                                            <th>MATRÍCULA</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tablaAlumnos">
-    
-                                    </tbody>
-                                </table>
+                            <div>
+                                <button onclick="agregarEstudiante()" class="btn btn-success mt-3"
+                                    style="width: 25%; margin: auto;">Agregar</button>
                             </div>
 
                         </div>
                     </div>
-
                 </div>
 
-                <div class="botones-form mt-1">
-                    <button type="submit" class="btn btn-primary" form="formulario">Guardar</button>
-                    <a class="btn btn-danger" href="./proyectos.html">Cancelar</a>
+                <div class="container border  p-3 mt-2">
+                    <h3>Alumnos participantes del proyecto</h3>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th style="background-color: coral">DNI</th>
+                                    <th>APELLIDO</th>
+                                    <th style="background-color: coral;">NOMBRE</th>
+                                    <th>MATRÍCULA</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablaAlumnos">
+
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
+            </div>
         </div>
-  
+    </div>
+
     <!-- FOOTER -->
-    <footer class="bg-primary text-white text-center text-lg-start footer">
+    <footer class="bg-primary text-white text-center text-lg-start footer mt-6 pt-6">
         <!-- Grid container -->
         <div class="container pt-3">
             <!--Grid row-->
@@ -225,7 +249,7 @@
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2023 Copyright:
             <a class="text-white" href="">Programacion III</a>
-          
+
         </div>
         <!-- Copyright -->
     </footer>
