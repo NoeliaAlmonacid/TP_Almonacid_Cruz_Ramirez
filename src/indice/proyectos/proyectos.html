@@ -28,7 +28,7 @@
             <a class="nav-link boton-nav" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link boton-nav" href="../comision/registro_cstf.html">Comisión de Seguimiento</a>
+            <a class="nav-link boton-nav" href="../comision/proyectos_finales.html">Comisión de Seguimiento</a>
           </li>
           <li class="nav-item">
             <a class="nav-link boton-nav" href="./proyectos.html">Proyectos</a>
@@ -43,15 +43,14 @@
       </div>
     </div>
   </nav>
-  <div class="body-pages">
-    <h1 class="textoPrincipal pt-3">Gestion de proyectos</h1>
-
-    <div class="container-fluid p-6 border border-dark">
+  <div class="body-pages pt-3">
+    <h1 class="textoPrincipal pt-3 text-center">Gestion de proyectos</h1>
+    <div class="container p-6 border border-dark">
       <div class="row">
         <div class="col-sm-2 btn-group-vertical">
-          <a href="./nuevo_proyecto.html" class="btn bam">Nuevo proyecto</a>
+          <a href="./nuevo_proyecto.html" class="btn bam">Nuevo Proyecto</a>
           <a href="#" class="btn bam">Modificar Proyecto</a>
-          <a href="#" class="btn bam">Eliminar proyecto</a>
+          <a href="#" class="btn bam">Eliminar Proyecto</a>
         </div>
         <div class="col-sm-10 columna-tabla">
           <h4>Lista de Proyectos</h4>
@@ -60,30 +59,28 @@
             <option value="E">Estado</option>
             <option value="F">Fechas</option>
           </select>
-
-
           <div class="table-responsive mt-3">
             <table class="table table-hover table-sm">
               <thead>
                 <tr>
-                  <th>Fecha</th>
-                  <th>Nombre del proyecto</th>
-                  <th>Docente director</th>
-                  <th>Estado</th>
+                  <th scope="col">Fecha</th>
+                  <th scope="col">Nombre del tribunal</th>
+                  <th scope="col">Docente director</th>
+                  <th scope="col">Estado</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th>2023-11-20</th>
-                  <th>Proyecto ejemplo 1</th>
-                  <th>Perez Juan</th>
-                  <th>Aprobado</th>
+                  <th scope="row">2023-11-20</th>
+                  <td>Tribunal ejemplo 1</td>
+                  <td>Perez Juan</td>
+                  <td>Aprobado</td>
                 </tr>
                 <tr>
-                  <th>2024-11-18</th>
-                  <th>Proyecto ejemplo 2</th>
-                  <th>Vargas Ana</th>
-                  <th>Pendiente</th>
+                  <th scope="row">2024-11-18</th>
+                  <td>Tribunal ejemplo 2</td>
+                  <td>Vargas Ana</td>
+                  <td>Pendiente</td>
                 </tr>
               </tbody>
             </table>
@@ -92,7 +89,6 @@
       </div>
     </div>
   </div>
-
 
   <!-- FOOTER -->
   <footer class="bg-primary text-white text-center text-lg-start footer">
