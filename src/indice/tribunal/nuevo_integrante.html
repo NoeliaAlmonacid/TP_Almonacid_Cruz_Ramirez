@@ -16,42 +16,92 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm navbar-dark" id="barraNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">GTF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="miNavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link boton-nav" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boton-nav" href="../comision/registro_cstf.html">Comision de Seguimiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boton-nav" href="../proyectos/proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boton-nav" href="../tribunal/tribunales.html">Tribunales</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boton-nav" href="../estadisticas/estadisticas.html">Estadisticas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div class="body-pages">
         <div class="container titulo-formulario">
         <h1>Alta del Integrante</h1>
         </div>
-        <div class="container border border-dark p-3" id="formularioTribunal">
-            <form action="#" method="post">
-                <h4>Datos de un integrante al tribunal:</h4>
-                <div class="row">
-                    <label for="apellidoDocente">Apellido/s:</label>
-                    <input type="text" name="apellidoDocente" id="apellidoDocente">
-                    <label for="nombreDoncente">Nombre/s:</label>
-                    <input type="text" name="nombreDoncente" id="nombreDoncente">
-                    <label for="cuilDocente">CUIL:</label>
-                    <input type="text" name="cuilDocente" id="cuilDocente">
-                    <label for="tribunal">Tribunal:</label>
-                    <select name="tribunal" id="tribunal">
-                        <option value="#">Seleccione un Tribunal</option>
-                        <option value="t1">Tribunal ejemplo 1</option>
-                        <option value="t2">Tribunal ejemplo 2</option>
-                    </select>
-                    <label for="rol">Rol:</label>
-                    <select name="rol" id="rol">
-                        <option value="#">Seleccione un Rol</option>
-                        <option value="presidente">Presidente</option>
-                        <option value="vocalTitular">Vocal Titular</option>
-                        <option value="vocalSuplente">Vocal Suplente</option>
-                    </select>
+        <section>
+            <div class="container body1">
+              <div class="card">
+                <div class="card-header1">Datos de un integrante al tribunal</div>
+                <div class="card-body">
+                  <form action="#" method="post" class="row g-3" enctype="multipart/form-data">
+                    <div class="col-md-4">
+                        <label for="apellidoDocente" class="form-label">Apellido/s</label>
+                        <input type="text" class="form-control" id="apellidoDocente" name="apellidoDocente" required>
+                      </div>
+                    <div class="col-md-4">
+                      <label for="nombreDoncente" class="form-label">Nombre/s</label>
+                      <input type="text" class="form-control" id="nombreDoncente" name="nombreDoncente" placeholder="Laura" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="cuilDocente" class="form-label">Cuil</label>
+                        <input type="text" class="form-control" id="cuilDocente" name="cuilDocente" placeholder="Ingrese Su CUIL sin Guiones" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="tribunal" class="form-label">Tribunal:</label>
+                        <select name="tribunal" id="tribunal" class="form-select" required>
+                            <option value="#">Seleccione un Tribunal</option>
+                            <option value="t1">Tribunal ejemplo 1</option>
+                            <option value="t2">Tribunal ejemplo 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="rol" class="form-label">Rol:</label>
+                        <select name="rol" id="rol" class="form-select" required>
+                            <option value="#">Seleccione un Rol</option>
+                            <option value="presidente">Presidente</option>
+                            <option value="vocalTitular">Vocal Titular</option>
+                            <option value="vocalSuplente">Vocal Suplente</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="fechaAlta" class="form-label">Fecha de Alta</label>
+                        <input type="date" class="form-control" id="fechaAlta" required>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="fechaBaja" class="form-label">Fecha de Baja</label>
+                        <input type="date" class="form-control" id="fechaBaja" required>
+                      </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-outline-dark boton">Inscripcion</button>
+                      <button type="reset" class="btn btn-outline-dark boton">Cancelar</button>
+                    </div>
+                  </form>
                 </div>
-                <br>
-                <div class="botones-form">
-                    <button type="submit" class="btn btn-primary">Agregar</button>
-                    <a class="btn btn-danger" href="./tribunales.html">Cancelar</a>
-                </div>
-            </form>
-        </div>
+              </div>
+            </div>
+          </section>
     </div>
+
     <!-- FOOTER -->
     <footer class="bg-primary text-white text-center text-lg-start footer">
         <!-- Grid container -->
