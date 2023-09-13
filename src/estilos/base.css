@@ -76,8 +76,8 @@ a.bam {
 
 /* Footer*/
 
-.footer {
-    margin-top: 20px;
+.footer, .separacion {
+    margin-top: 30px;
 }
 
 .list-unstyled li {
