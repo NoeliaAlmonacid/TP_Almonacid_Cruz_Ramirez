@@ -35,14 +35,19 @@ class Estudiante extends Persona{
 
 class Profesor extends Persona{
     asignatura;
-    comision;
+    comision = [];
     constructor(nombre, apellido, genero, asignatura){
         super(nombre, apellido, genero);
         this.asignatura = asignatura;
     }
     asignar(comision){
         this.comision = comision;
-        console.log(`Asignado a la comisión ${this.comision}`);
+        
+        console.log('Asignado a comisión');
+        console.log('Miembros:');
+        for(let miembro of comision){
+            console.log(miembro);
+        }
     }
 }
 
@@ -62,9 +67,12 @@ estudiante3.anexarAGrupo(estudiante2);
 estudiante1.obtenerDetalles();
 estudiante1.registrar();
 
+console.log('\n');
+
 let profesor1 = new Profesor("Nahomi", "Lucero", "M", "Geología");
 let profesor2 = new Profesor("Roberto", "Ramos", "V", "Redes de Comunicación");
 let profesor3 = new Profesor("Veronica", "Juarez", "M", "Gestión de Repositorios");
 
-profesor1.asignar(1);
-profesor2.asignar(2);
+let comision1 = [profesor2.apellido + " " + profesor2.nombre, profesor3.apellido + " " + profesor3.nombre];
+
+profesor2.asignar(comision1);
