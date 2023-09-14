@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../../estilos/base.css">
   <!-- Icono de la página -->
   <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
+  <script src="../../scripts/proyectosJS.js"></script>
   <title>Gestión de Trabajos Finales-Registro CSTF</title>
 </head>
 
@@ -56,19 +57,19 @@
               <form action="#" method="post" class="row g-3" enctype="multipart/form-data">
                 <div class="col-md-4">
                   <label for="cuilD" class="form-label">Cuil</label>
-                  <input type="text" class="form-control" id="cuilD" placeholder="Ingrese Su CUIL sin Guiones" required>
+                  <input type="text" class="form-control" id="cuilD" placeholder="Ingrese Su CUIL sin Guiones" required onkeypress="return validacionDeTeclasNumericas(event);">
                 </div>
                 <div class="col-md-4">
                   <label for="nombreD" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombreD" placeholder="Laura" required>
+                  <input type="text" class="form-control" id="nombreD" placeholder="Laura" required onkeypress="return validacionDeTeclasLetras(event);">
                 </div>
                 <div class="col-md-4">
                   <label for="apellidoD" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="apellidoD" required>
+                  <input type="text" class="form-control" id="apellidoD" required onkeypress="return validacionDeTeclasLetras(event);">
                 </div>
                 <div class="col-md-6">
                   <label for="departamento" class="form-label">Departamento</label>
-                  <input type="text" class="form-control" id="departamento" placeholder="Departamento" required>
+                  <input type="text" class="form-control" id="departamento" placeholder="Departamento" required onkeypress="return validacionDeTeclasLetras(event);">
                 </div>
                 <div class="col-md-6">
                   <label for="email" class="form-label">Correo Electronico</label>
