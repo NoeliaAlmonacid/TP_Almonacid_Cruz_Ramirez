@@ -84,34 +84,27 @@
                                 </div>
                                 <div class="col-md-12">
                                     <label for="tituloProyecto" class="mt-1 mb-2 form-label">Título</label>
-                                    <input name="tituloProyecto" class="form-control" type="text" id="tituloProyecto"
-                                        placeholder="Ingrese título" required>
+                                    <input name="tituloProyecto" class="form-control" type="text" id="tituloProyecto" placeholder="Ingrese título" required>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="descripcionProyecto" class="mt-1 mb-1 form-label">Descripción:</label>
-                                    <textarea name="descripcionProyecto" class="form-control" type="text"
-                                        id="descripcionProyecto" value="">
-                                    </textarea>
+                                    <textarea name="descripcionProyecto" class="form-control" type="text" id="descripcionProyecto" value=""></textarea>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="archivoProyecto" class="mt-1 mb-2 form-label">Archivo del
-                                        Proyecto</label>
-                                    <input name="archivoProyecto" type="file" id="archivoProyecto" class="form-control"
-                                        required>
+                                    <label for="archivoProyecto" class="mt-1 mb-2 form-label">Archivo del Proyecto</label>
+                                    <input name="archivoProyecto" type="file" id="archivoProyecto" class="form-control" required>
                                 </div>
                                 <div class="col-md-12">
-                                    <label for="certificadoAnalitico" class="mt-1 mb-2 form-label">Certificado
-                                        analítico</label>
-                                    <input name="certificadoAnalitico" type="file" id="certificadoAnalitico"
-                                        class="form-control">
+                                    <label for="certificadoAnalitico" class="mt-1 mb-2 form-label">Certificado analítico</label>
+                                    <input name="certificadoAnalitico" type="file" id="certificadoAnalitico" class="form-control" required>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="notaDirector" class="mt-1 mb-2 form-label">Nota al Director</label>
-                                    <input type="file" id="notaDirector" class="form-control">
+                                    <input type="file" id="notaDirector" class="form-control" required>
                                 </div>
                                 <div class="col-md-12">
                                     <label for="cvDirector" class="mt-1 mb-2 form-label">CV del Director</label>
-                                    <input type="file" id="cvDirector" class="form-control">
+                                    <input type="file" id="cvDirector" class="form-control" required>
                                 </div>
                                 <div class="col-12">
 
@@ -136,11 +129,11 @@
                             <div class="row p-3">
                                 <div class="col-md-6"></div>
                                 <label for="apellidoAlumno">Apellido/s:</label>
-                                <input type="text" id="apellidoAlumno" class="form-control">
+                                <input type="text" id="apellidoAlumno" class="form-control" onkeypress="return validacionDeTeclasLetras(event);">
                             </div>
                             <div>
                                 <label for="nombreAlumno">Nombre/s:</label>
-                                <input type="text" id="nombreAlumno" class="form-control">
+                                <input type="text" id="nombreAlumno" class="form-control" onkeypress="return validacionDeTeclasLetras(event);">
                             </div>
                             <div>
                                 <label for="dniAlumno">DNI:</label>
@@ -148,10 +141,10 @@
                             </div>
                             <div>
                                 <label for="matriculaAlumno">Matricula:</label>
-                                <input type="text" id="matriculaAlumno" class="form-control">
+                                <input type="text" id="matriculaAlumno" class="form-control" onkeypress="return validacionDeTeclasNumericas(event);">
                             </div>
                             <div>
-                                <button onclick="agregarEstudiante()" class="btn btn-success mt-3"
+                                <button onclick="agregarEstudiante();" class="btn btn-success mt-3"
                                     style="width: 25%; margin: auto;">Agregar</button>
                             </div>
 
