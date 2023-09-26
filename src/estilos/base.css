@@ -1,0 +1,25 @@
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    border-style:double;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.resaltarBlanco{
+    color:aliceblue;
+} 
+
+/* section.menu{
+    margin-bottom: 20px;
+} */
+
+div.opcion{
+    background-color: lightsalmon;
+    display: inline;
+    border-style: solid;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
